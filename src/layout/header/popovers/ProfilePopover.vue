@@ -6,22 +6,16 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 // CUSTOM COMPONENT
-// import Icon from "@/components/Icon.vue";
+import Icon from "@/components/Icon.vue";
 </script>
 
 <template>
   <Popover>
     <PopoverTrigger as-child>
-      <div
-        class="flex items-center gap-2 py-2 pl-3 pr-2 rounded-full cursor-pointer bg-hover"
-      >
-        <p class="text-[13px] font-semibold text-nowrap">Hi. John Smith</p>
-
-        <Avatar size="xs" class="border border-white">
-          <AvatarImage src="/images/users/07.jpg" alt="User" />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
-      </div>
+      <Avatar size="xs" class="border border-white cursor-pointer">
+        <AvatarImage src="/images/users/07.jpg" alt="User" />
+        <AvatarFallback>CN</AvatarFallback>
+      </Avatar>
     </PopoverTrigger>
 
     <PopoverContent class="w-[200px] py-2 px-0 rounded-lg">

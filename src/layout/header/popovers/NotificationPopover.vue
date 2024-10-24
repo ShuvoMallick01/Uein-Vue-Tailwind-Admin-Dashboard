@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Ban, Bell } from "lucide-vue-next";
 // SHADCDN COMPONENTS
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import {
@@ -7,6 +6,8 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+// CUSTOM COMPONENTS
+import Icon from "@/components/Icon.vue";
 // DATA LIST
 import { notifications } from "@/data/notifications";
 </script>
@@ -14,9 +15,11 @@ import { notifications } from "@/data/notifications";
 <template>
   <Popover>
     <PopoverTrigger as-child>
-      <button>
-        <Bell class="text-primary" :size="22" />
-      </button>
+      <Icon
+        icon="akar-icons:bell"
+        height="20"
+        class="cursor-pointer hover:text-primary"
+      />
     </PopoverTrigger>
 
     <PopoverContent class="w-[350px] p-0 py-3 mt-2">
