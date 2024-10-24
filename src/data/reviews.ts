@@ -1,0 +1,53 @@
+const reviews = [
+  {
+    id: 1,
+    customerId: 1,
+    productId: 1,
+    image: "/images/users/01.jpg",
+    customerName: "Aubrey Beer",
+    publishedDate: "14 Jan, 2024",
+    rating: 4.5,
+    review:
+      "Amazing! Fast, to the point, professional and really amazing to work with them!!",
+    like: 10,
+    dislike: 2,
+  },
+  {
+    id: 2,
+    customerId: 2,
+    productId: 1,
+    image: "/images/users/02.jpg",
+    customerName: "John Doe",
+    publishedDate: "15 Jan, 2024",
+    rating: 4.0,
+    review: "Great experience, very professional service.",
+    like: 8,
+    dislike: 1,
+  },
+  {
+    id: 3,
+    customerId: 3,
+    productId: 1,
+    image: "/images/users/03.jpg",
+    customerName: "Jane Smith",
+    publishedDate: "16 Jan, 2024",
+    rating: 5.0,
+    review: "Outstanding service, highly recommend!",
+    like: 15,
+    dislike: 0,
+  },
+  {
+    id: 4,
+    customerId: 4,
+    productId: 1,
+    image: "/images/users/04.jpg",
+    customerName: "Michael Johnson",
+    publishedDate: "17 Jan, 2024",
+    rating: 3.5,
+    review: "Good service but could be improved in some areas.",
+    like: 5,
+    dislike: 3,
+  },
+];
+
+export default reviews;

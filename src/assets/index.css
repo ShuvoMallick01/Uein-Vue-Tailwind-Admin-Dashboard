@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* == START == */
+@layer base {
+  :root {
+    --foreground: #011e3d;
+    --background: #f5f8fa;
+
+    --card: #ffffff;
+    --card-foreground: #011e3d;
+
+    --hover: #e5f3fd;
+    --active: #e5eef5;
+    --border: #e5e7eb;
+
+    --muted: #738499;
+
+    --radius: 0.5rem;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --gradient-2: linear-gradient(
+      250deg,
+      #fff 2.51%,
+      rgba(212, 241, 255, 0.54) 96.8%
+    );
+  }
+
+  .dark {
+    --foreground: #ffffff;
+    --background: #111827;
+
+    --card: #1f2937;
+    --card-foreground: #ffffff;
+
+    --border: #374151;
+    --hover: #f3f4f60a;
+    --active: #f3f4f60a;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --gradient-2: linear-gradient(250deg, #1f2937 2.51%, #2499ef47 100%);
+  }
+
+  body {
+    color: var(--foreground);
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1.125rem;
+  }
+
+  h6 {
+    font-size: 0.875rem;
+  }
+
+  .glassy-overlay {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+@layer utilities {
+  /* ===== GRADIENT BACKGROUND ===== */
+  .gradient-bg-1 {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 172, 255, 0.46) 0%,
+      rgba(189, 0, 255, 0.35) 100%
+    );
+  }
+
+  .gradient-bg-2 {
+    background: var(--gradient-2);
+  }
+}
+
+/* ===== SIMPLEBAR SCROLL BAR ===== */
+/* .simplebar-scrollbar:before {
+  @apply bg-slate-300 dark:bg-slate-600;
+}
+
+.simplebar-track.simplebar-horizontal {
+  height: 9px;
+}
+
+.simplebar-track.simplebar-vertical {
+  width: 9px;
+} */
+
+/* ===== VUE-3 APEXCHART ===== */
+/* .apexcharts-tooltip {
+  @apply !shadow-lg !border-0 !rounded-lg;
+}
+
+.apexcharts-tooltip-title {
+  @apply font-medium;
+}
+
+.apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+  @apply !border-b-gray-100 !bg-slate-100;
+}
+
+.apexcharts-tooltip.apexcharts-theme-dark .apexcharts-tooltip-title {
+  @apply !bg-slate-700 !border-b-gray-700;
+}
+
+.apexcharts-tooltip.apexcharts-theme-dark,
+.apexcharts-xaxistooltip.apexcharts-theme-dark {
+  @apply !bg-slate-700/70;
+}
+
+.apexcharts-xaxistooltip {
+  @apply !shadow !border-0 !rounded-lg font-medium;
+}
+
+.apexcharts-xaxistooltip-bottom:before {
+  @apply !border-0;
+}
+
+.apexcharts-xaxistooltip-bottom.apexcharts-theme-dark:before {
+  @apply !border-slate-700/70;
+} */
+
+/* ===== N-PROGRESS ===== */
+/* #nprogress .bar {
+  z-index: 9999 !important;
+  @apply !bg-primary;
+}
+
+#nprogress .peg {
+  @apply !shadow-none;
+} */
