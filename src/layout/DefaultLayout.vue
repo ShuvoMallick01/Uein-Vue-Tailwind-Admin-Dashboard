@@ -7,7 +7,7 @@ import SidebarNavigation from "./sidebar/SidebarNavigation.vue";
 <template>
   <!-- SIDEBAR NAVIGATION SECTION FOR DESKTOP DEVICE -->
   <aside
-    class="bg-white h-screen fixed left-0 top-0 w-[260px] 2xl:w-[280px] z-[1111] hidden lg:block dark:bg-background"
+    class="bg-gray-light h-screen fixed left-0 top-0 w-[260px] 2xl:w-[280px] z-[1111] hidden lg:block dark:bg-background"
   >
     <SidebarNavigation />
   </aside>

@@ -5,8 +5,8 @@
 /* == START == */
 @layer base {
   :root {
-    --foreground: #011e3d;
-    --background: #f5f8fa;
+    --foreground: #1f2937;
+    --background: #ffffff;
 
     --card: #ffffff;
     --card-foreground: #011e3d;
@@ -15,7 +15,9 @@
     --active: #e5eef5;
     --border: #e5e7eb;
 
-    --muted: #738499;
+    --muted: #9ca3af;
+    --text-secondary: #4b5563;
+    --text-primary: #1f2937;
 
     --radius: 0.5rem;
 
@@ -31,7 +33,7 @@
 
   .dark {
     --foreground: #ffffff;
-    --background: #111827;
+    --background: #1f2937;
 
     --card: #1f2937;
     --card-foreground: #ffffff;
@@ -40,6 +42,9 @@
     --hover: #f3f4f60a;
     --active: #f3f4f60a;
 
+    --text-secondary: #f9fafb;
+    --text-primary: #e5e7eb;
+
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
 
@@ -47,31 +52,31 @@
   }
 
   body {
-    color: var(--foreground);
+    @apply text-gray;
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3.75rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   h3 {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
   }
 
   h4 {
-    font-size: 1.5rem;
+    font-size: 1.875rem;
   }
 
   h5 {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
   }
 
   h6 {
-    font-size: 0.875rem;
+    font-size: 1.25rem;
   }
 
   .glassy-overlay {

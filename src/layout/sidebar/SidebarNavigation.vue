@@ -11,7 +11,7 @@ const logo = useLogo();
 </script>
 
 <template>
-  <div class="px-4 py-5 mb-2">
+  <div class="px-5 py-6">
     <RouterLink to="/">
       <img
         :src="logo"
@@ -22,17 +22,16 @@ const logo = useLogo();
   </div>
 
   <Scrollbar class="h-[calc(100vh-75px)]">
-    <nav class="pb-4 space-y-6">
-      <div
-        class="space-y-3"
-        v-for="navGroup in navigation"
-        :key="navGroup.name"
-      >
-        <h4 class="px-5 text-[12px] font-semibold text-primary uppercase">
+    <nav class="space-y-4 pb-4">
+      <div v-for="navGroup in navigation" :key="navGroup.name">
+        <h4
+          v-if="navGroup.name"
+          class="px-5 pb-4 text-sm font-medium text-gray uppercase"
+        >
           {{ navGroup.name }}
         </h4>
 
-        <ul>
+        <ul class="px-5">
           <NavItem
             v-for="(menuItem, index) in navGroup.menu"
             :item="menuItem"

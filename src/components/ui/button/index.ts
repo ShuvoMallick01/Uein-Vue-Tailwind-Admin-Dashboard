@@ -10,15 +10,13 @@ export const buttonVariants = cva(
         default: "bg-primary text-white hover:bg-primary/90",
         outline: "border border-border bg-transparent",
         link: "text-primary underline-offset-4 hover:underline",
-        // destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        // secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        // ghost: "hover:bg-accent hover:text-accent-foreground",
       },
       size: {
         default: "h-10 px-5 rounded-md",
         xs: "h-7 px-2 rounded",
-        sm: "h-9 px-3 rounded-md",
-        lg: "h-12 px-8 rounded-md",
+        sm: "h-10 px-4 rounded-md",
+        md: "h-12 px-5 text-base rounded-md",
+        lg: "h-14 px-8 text-lg rounded-md",
         icon: "h-10 w-10",
       },
       color: {
@@ -62,44 +60,6 @@ export const buttonVariants = cva(
         class:
           "text-error bg-transparent border-error outline-none hover:bg-error/10",
       },
-
-      // Translucent Buttons
-      // {
-      //   variant: "translucent",
-      //   color: "primary",
-      //   class:
-      //     "text-primary bg-primary/15 border-transparent hover:text-primary-darker hover:bg-primary/40 dark:text-primary"
-      // },
-      // {
-      //   variant: "translucent",
-      //   color: "secondary",
-      //   class:
-      //     "text-slate-400 bg-secondary border-transparent hover:text-black hover:bg-text-400/20  dark:text-gray-500 dark:hover:bg-white dark:hover:text-gray-500"
-      // },
-      // {
-      //   variant: "translucent",
-      //   color: "info",
-      //   class:
-      //     "text-info bg-info/15 border-transparent hover:text-info-darker hover:bg-info/40 dark:hover:text-info"
-      // },
-      // {
-      //   variant: "translucent",
-      //   color: "success",
-      //   class:
-      //     "text-success bg-success/15 border-transparent hover:text-success-darker hover:bg-success/40 dark:hover:text-success"
-      // },
-      // {
-      //   variant: "translucent",
-      //   color: "warning",
-      //   class:
-      //     "text-warning bg-warning/15 border-transparent hover:text-warning-darker hover:bg-warning/40 dark:hover:text-warning"
-      // },
-      // {
-      //   variant: "translucent",
-      //   color: "error",
-      //   class:
-      //     "text-error bg-error/15 border-transparent hover:text-error-darker hover:bg-error/40 dark:hover:text-error"
-      // },
 
       // Links
       {

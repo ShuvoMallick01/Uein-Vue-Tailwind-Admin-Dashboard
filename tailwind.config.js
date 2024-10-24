@@ -13,6 +13,27 @@ export default {
     fontFamily: {
       sans: ['"Inter", sans-serif'],
     },
+    dropShadow: {
+      xs: "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+      xs: [
+        "0px 1px 3px 0px rgba(16, 24, 40, 0.10)",
+        "0px 1px 2px 0px rgba(16, 24, 40, 0.06)",
+      ],
+      md: [
+        "0px 4px 8px -2px rgba(16, 24, 40, 0.10)",
+        "0px 2px 4px -2px rgba(16, 24, 40, 0.06)",
+      ],
+      lg: [
+        "0px 12px 16px -4px rgba(16, 24, 40, 0.08)",
+        "0px 4px 6px -2px rgba(16, 24, 40, 0.03)",
+      ],
+      xl: [
+        "0px 20px 24px -4px rgba(16, 24, 40, 0.08)",
+        "0px 8px 8px -4px rgba(16, 24, 40, 0.03)",
+      ],
+      "2xl": "0px 24px 48px -12px rgba(16, 24, 40, 0.18)",
+      "3xl": "0px 32px 64px -12px rgba(16, 24, 40, 0.14)",
+    },
     extend: {
       colors: {
         card: {
@@ -24,34 +45,34 @@ export default {
           foreground: "hsl(var(--accent-foreground))",
         },
         primary: {
-          dark: "#0e73be",
-          DEFAULT: "#2499ef",
-          light: "#249aef31",
+          dark: "#142297",
+          DEFAULT: "#2940D3",
+          light: "#F1F4FE",
         },
-        secondary: {
-          dark: "#c1d2e5",
-          DEFAULT: "#f1f6f9",
-          light: "#f1f6f95b",
+        gray: {
+          dark: "var(--text-primary)",
+          DEFAULT: "var(--text-secondary)",
+          light: "#F9FAFB",
         },
         info: {
-          dark: "#525b93",
-          DEFAULT: "#585fdd",
-          light: "rgba(140, 142, 255, 0.24)",
+          dark: "#106093",
+          DEFAULT: "#188FDD",
+          light: "#EDF7FD",
         },
         success: {
-          dark: "#209e5f",
-          DEFAULT: "#09ba70",
-          light: "#09ba702c",
+          dark: "#109348",
+          DEFAULT: "#18DD6C",
+          light: "#EDFDF4",
         },
         warning: {
-          dark: "#d88619",
-          DEFAULT: "#f49d1a",
-          light: "rgba(255, 198, 117, 0.26)",
+          dark: "#92400E",
+          DEFAULT: "#D97706",
+          light: "#FFFBEB",
         },
         error: {
-          dark: "#d62b64",
-          DEFAULT: "#ff316f",
-          light: "#ff316f33",
+          dark: "#9F1239",
+          DEFAULT: "#E11D48",
+          light: "#fff1f2",
         },
 
         muted: "var(--muted)",

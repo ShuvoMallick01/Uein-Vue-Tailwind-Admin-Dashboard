@@ -8,7 +8,7 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 // CUSTOM COMPONENT
-// import Icon from "@/components/Icon.vue";
+import Icon from "@/components/Icon.vue";
 // CUSTOM STORE
 import { useSidebar } from "@/stores/sidebar";
 // TYPE
@@ -42,36 +42,48 @@ watch(
   <Collapsible v-model:open="isOpen">
     <CollapsibleTrigger class="w-full">
       <div
-        class="transition-all duration-300 ease-in-out border-l-2 cursor-pointer text-muted border-l-transparent hover:font-medium hover:border-l-primary hover:text-primary hover:bg-hover"
-        :class="{ '!border-l-primary !text-primary bg-hover': isOpen }"
+        class="transition-all duration-300 rounded-lg ease-in-out cursor-pointer text-gray hover:font-medium hover:text-primary hover:bg-hover"
+        :class="{ ' !text-primary bg-hover': isOpen }"
       >
-        <div class="flex items-center justify-between p-4">
-          <div class="flex text-[13px] font-medium truncate items-center gap-3">
-            <!-- <Icon :name="item.icon" :size="20" :strokeWidth="1.2" /> -->
+        <div class="flex items-center justify-between px-4 py-2 mb-1">
+          <div class="flex text-sm font-medium truncate items-center gap-2">
+            <Icon :icon="item.icon" height="20" />
             {{ item.label }}
           </div>
 
-          <!-- <Icon
-            :size="18"
-            name="ChevronDown"
+          <Icon
+            :height="14"
+            icon="material-symbols:keyboard-arrow-down"
             class="transition-all duration-300 ease-in-out"
             :class="{ 'rotate-180': isOpen }"
-          /> -->
+          />
         </div>
       </div>
     </CollapsibleTrigger>
 
-    <CollapsibleContent>
+    <CollapsibleContent class="space-y-1 mb-4">
       <RouterLink
         :to="child.route"
         v-for="child in item.children"
         @click="handleCloseSidebar()"
-        class="flex items-center gap-4 p-4 duration-300 ease-in-out group text-[13px] font-medium text-muted hover:font-medium hover:text-primary hover:bg-hover"
+        class="flex items-center gap-2 ps-[22px] pe-4 py-2 duration-300 ease-in-out group text-[14px] font-medium rounded-lg hover:font-medium hover:text-primary hover:bg-hover"
         :class="{
-          'bg-hover text-primary !border-l-primary': route.path === child.route,
+          'bg-hover text-primary dark:text-primary-light':
+            route.path === child.route,
         }"
       >
-        <!-- <Icon name="Dot" :size="20" /> -->
+        <Icon
+          icon="icon-park-outline:dot"
+          style="font-size: 14px; transition: font-size 0.3s"
+          class="hover:text-xl"
+        />
+
+        <!-- <Icon
+          icon="icon-park-outline:dot"
+          style="font-size: 14px; transition: font-size 0.3s"
+          onmouseover="this.style.fontSize='24px'"
+          onmouseout="this.style.fontSize='14px'"
+        /> -->
         {{ child.label }}
       </RouterLink>
     </CollapsibleContent>
